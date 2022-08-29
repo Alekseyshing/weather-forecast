@@ -18,7 +18,8 @@ const saveToken = async (token) => {
 }
 
 const initCli = () => {
-  const args = getArgs(process.argv)
+  const args = getArgs(process.argv);
+  console.log(process.env);
   if(args.h){
     printHelp()
   }
